@@ -1,11 +1,11 @@
+import dotenv from 'dotenv';
+dotenv.config(); // BẮT BUỘC phải gọi dòng này đầu tiên
+
 import express from 'express';
 import cors from 'cors';
-import dotenv from 'dotenv';
 
 import authRoutes from './routes/auth.route';
 import reportRoutes from './routes/report.route';
-
-dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 8080;
